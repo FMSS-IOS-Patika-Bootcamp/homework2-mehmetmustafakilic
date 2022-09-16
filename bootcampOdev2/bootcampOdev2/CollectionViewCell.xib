@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="gto-SS-mFq" customClass="CollectionViewCell" customModule="bootcampOdev2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-5l-oBl">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="sVH-c0-S89">
+                                <rect key="frame" x="20" y="-4" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sVH-c0-S89" secondAttribute="height" multiplier="1:1" id="RX9-04-10M"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cui-2T-CNc">
+                                <rect key="frame" x="47" y="166" width="106" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cui-2T-CNc" secondAttribute="bottom" constant="10" id="2ev-e0-Old"/>
+                            <constraint firstItem="cui-2T-CNc" firstAttribute="top" secondItem="sVH-c0-S89" secondAttribute="bottom" constant="10" id="Fnk-HX-Q68"/>
+                            <constraint firstItem="cui-2T-CNc" firstAttribute="centerX" secondItem="sVH-c0-S89" secondAttribute="centerX" id="RMQ-Gw-yCW"/>
+                            <constraint firstItem="sVH-c0-S89" firstAttribute="centerX" secondItem="Yba-5l-oBl" secondAttribute="centerX" id="Rez-rX-qIt"/>
+                            <constraint firstItem="sVH-c0-S89" firstAttribute="height" secondItem="Yba-5l-oBl" secondAttribute="height" multiplier="0.8" id="Yif-rp-gaJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pbp-jk-iSW"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Yba-5l-oBl" secondAttribute="trailing" id="ZWh-hy-2hI"/>
+                <constraint firstItem="Yba-5l-oBl" firstAttribute="top" secondItem="gto-SS-mFq" secondAttribute="top" id="aeg-wA-jbG"/>
+                <constraint firstAttribute="bottom" secondItem="Yba-5l-oBl" secondAttribute="bottom" id="dWE-Pt-6hN"/>
+                <constraint firstItem="Yba-5l-oBl" firstAttribute="leading" secondItem="gto-SS-mFq" secondAttribute="leading" id="tpj-e1-JaF"/>
+            </constraints>
+            <size key="customSize" width="200" height="257"/>
+            <connections>
+                <outlet property="cellImageView" destination="sVH-c0-S89" id="m8J-2T-Qnb"/>
+                <outlet property="cellLbl" destination="cui-2T-CNc" id="Zea-Uj-j0v"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="158.03571428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="10" width="320" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
